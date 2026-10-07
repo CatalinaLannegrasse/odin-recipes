@@ -3,19 +3,46 @@ body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: lightsalmon;
+    /* Added max-width and auto margins to center content nicely on large screens */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1, h2 {
     text-align: center;
     background-color: lightsalmon;
     color: white;
+    /* Added padding and border-radius using box model concepts */
+    padding: 10px;
+    border-radius: 8px;
 }
 
-ul {
+li {
     text-align: left;
+}
+
+/* Specific styling for the recipe list container */
+.recetas {
+    background-color: #fff9f5;
+    padding: 15px;
+    border: 2px solid lightsalmon;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 .button {
     background-color: lightsalmon;
-    padding: 5px;
+    color: white;
+    padding: 8px 16px;
+    /* Added text-decoration and border-radius */
+    text-decoration: none;
+    border-radius: 4px;
+    /* Use inline-block so padding and margins apply correctly */
+    display: inline-block; 
+}
+
+/* Added a hover effect using pseudo-classes */
+.button:hover {
+    background-color: #e59372;
 }
